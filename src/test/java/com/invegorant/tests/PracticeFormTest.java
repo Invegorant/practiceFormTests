@@ -6,13 +6,11 @@ import com.invegorant.pages.PracticeFormPage;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-@Tag("PFT")
 public class PracticeFormTest extends TestBase
 {
 
