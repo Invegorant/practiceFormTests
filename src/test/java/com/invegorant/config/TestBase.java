@@ -13,6 +13,7 @@ public class TestBase {
     {
         Configuration.startMaximized = true;
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        Configuration.timeout = 10000;
     }
 
     @AfterAll
