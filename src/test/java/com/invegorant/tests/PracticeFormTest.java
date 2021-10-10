@@ -27,12 +27,12 @@ public class PracticeFormTest extends TestBase
     @AfterAll
     public static void afterAll()
     {
-        step("Get all attachments after test", () -> {
-            Attach.screenshotAs("Last screenshot");
-            Attach.pageSource();
-            Attach.browserConsoleLogs();
-            Attach.addVideo();
-        });
+//        step("Get all attachments after test", () -> {
+//            Attach.screenshotAs("Last screenshot");
+//            Attach.pageSource();
+//            Attach.browserConsoleLogs();
+//            Attach.addVideo();
+//        });
     }
 
     @Test
