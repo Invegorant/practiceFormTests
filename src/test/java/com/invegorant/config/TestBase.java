@@ -9,6 +9,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import static java.lang.String.format;
+
 public class TestBase {
     @BeforeAll
     public static void setUp() {
@@ -21,6 +23,8 @@ public class TestBase {
         Configuration.timeout = 10000;
         WebConfig credentials = ConfigFactory.create(WebConfig.class);
         Configuration.remote = "https://" + credentials.login() + ":" + credentials.password() + "@" + credentials.baseUrl();
+        String credentialMessage = format("Base url - %s, login - %s, password %s", credentials.baseUrl(), credentials.login(), credentials.password());
+        System.out.println(credentialMessage);
     }
 
     @AfterEach
